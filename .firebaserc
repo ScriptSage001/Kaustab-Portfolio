@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "kaustab-samanta"
+  },
+  "targets": {
+    "kaustab-samanta": {
+      "hosting": {
+        "kaustabsamanta": [
+          "kaustabsamanta"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

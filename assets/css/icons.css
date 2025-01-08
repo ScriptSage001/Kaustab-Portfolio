@@ -1,0 +1,79 @@
+.custom-icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+}
+
+.ci-jwt {
+    -webkit-mask-image: url('/assets/icons/jsonwebtokens.svg');
+    mask-image: url('/assets/icons/jsonwebtokens.svg');
+}
+
+.ci-efcore {
+    -webkit-mask-image: url('/assets/icons/Entity-Framework-Core-Icon.svg');
+    mask-image: url('/assets/icons/Entity-Framework-Core-Icon.svg');
+}
+
+.ci-dapper {
+    -webkit-mask-image: url('/assets/icons/Dapper-Icon.svg');
+    mask-image: url('/assets/icons/Dapper-Icon.svg');
+}
+
+.ci-mediatr {
+    -webkit-mask-image: url('/assets/icons/MediatR-Icon.svg');
+    mask-image: url('/assets/icons/MediatR-Icon.svg');
+}
+
+.ci-teamcity {
+    -webkit-mask-image: url('/assets/icons/TeamCity-Icon.svg');
+    mask-image: url('/assets/icons/TeamCity-Icon.svg');
+}
+
+.ci-octopus {
+    -webkit-mask-image: url('/assets/icons/Octopus-Icon.svg');
+    mask-image: url('/assets/icons/Octopus-Icon.svg');
+}
+
+.ci-render {
+    -webkit-mask-image: url('/assets/icons/Render-Icon.svg');
+    mask-image: url('/assets/icons/Render-Icon.svg');
+}
+
+.ci-microservices {
+    -webkit-mask-image: url('/assets/icons/Microservices-Icon.svg');
+    mask-image: url('/assets/icons/Microservices-Icon.svg');
+}
+
+.ci-microfrontends {
+    -webkit-mask-image: url('/assets/icons/Micro-Frontends-Icon.svg');
+    mask-image: url('/assets/icons/Micro-Frontends-Icon.svg');
+}
+
+.ci-agile {
+    -webkit-mask-image: url('/assets/icons/Agile-Icon.svg');
+    mask-image: url('/assets/icons/Agile-Icon.svg');
+}
+
+.ci-scrum {
+    -webkit-mask-image: url('/assets/icons/Scrum-Icon.svg');
+    mask-image: url('/assets/icons/Scrum-Icon.svg');
+}
+
+.ci-ddd {
+    -webkit-mask-image: url('/assets/icons/DDD-Icon.svg');
+    mask-image: url('/assets/icons/DDD-Icon.svg');
+}
+
+.ci-ca {
+    -webkit-mask-image: url('/assets/icons/CA-Icon.svg');
+    mask-image: url('/assets/icons/CA-Icon.svg');
+}
+
+.ci-cicd {
+    -webkit-mask-image: url('/assets/icons/CI-CD-Icon.svg');
+    mask-image: url('/assets/icons/CI-CD-Icon.svg');
+}

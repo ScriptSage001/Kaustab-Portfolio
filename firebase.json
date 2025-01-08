@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "kaustabsamanta",
+    "public": "/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
