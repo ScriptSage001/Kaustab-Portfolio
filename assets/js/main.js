@@ -229,7 +229,7 @@
         .then(async (response) => {
           let json = await response.json();
           if (response.status == 200) {
-            message.innerHTML = "Form submitted successfully";
+            message.innerHTML = "Message sent successfully!";
             message.classList.remove('loading');
             message.classList.add('sent-message');
           } else {
