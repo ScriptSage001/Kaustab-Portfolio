@@ -27,9 +27,13 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet" type='text/css'>
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Icon CSS File -->
+  <link href="assets/css/icons.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
@@ -43,11 +47,12 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -57,23 +62,1342 @@
 
   <main class="main">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section dark-background">
-
-      <img src="assets/images/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container" data-aos="zoom-out" data-aos-delay="100">
-        <h2>Kaustab Samanta</h2>
-        <p>I'm a <span class="typed" data-typed-items="Backend Specialist, .NET Enthusiast, Full-Stack Developer">Full-Stack Developer</span><span class="typed-cursor typed-cursor--blink"></span></p>
-        <div class="social-links">
-            <a target="_blank" href="https://github.com/ScriptSage001"><i class="bi bi-github"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/kaustab-samanta-b513511a1/"><i class="bi bi-linkedin"></i></a>
+    <!-- Home Section -->
+    <div id="home" class="home-section">
+      <!-- Hero Section -->
+      <section id="hero" class="hero section dark-background">
+      
+        <img src="assets/images/hero-bg.jpg" alt="" data-aos="fade-in">
+      
+        <div class="container" data-aos="zoom-out" data-aos-delay="100">
+          <h2>Kaustab Samanta</h2>
+          <p>I'm a <span class="typed" data-typed-items="Backend Specialist, .NET Enthusiast, Full-Stack Developer">Full-Stack
+              Developer</span><span class="typed-cursor typed-cursor--blink"></span></p>
+          <div class="social-links">
+            <a target="_blank" href="https://github.com/ScriptSage001">
+              <i class="bi bi-github"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/kaustab-samanta-b513511a1/">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
         </div>
-      </div>
+      
+      </section>
+      <!-- /Hero Section -->    
+    </div>
+    <!-- /Home Section -->
+    
+    <!-- About Section -->    
+    <div id="about" class="about-section wrapper-section">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="text-center">
+            <h1>About Me</h1>
+          </div>
+        </div>
+      </div><!-- End Page Title -->
+    
+      <!-- About Section -->
+      <section id="about-section" class="about section">
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4">
+              <img src="assets/images/profile-img.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-8 content text-center-sm pt-5 pt-md-0 pt-lg-0">
+              <h2>👋 Hi, I'm Kaustab, a <span class="accent-icon">Software Developer</span>, passionate about building scalable
+                and efficient systems.</h2>
+              <p class="pt-2">
+                Explore my portfolio to see how I turn ideas into impactful
+                software solutions, demonstrating my expertise in backend and frontend development.
+              </p>
+              <div class="container">
+                <div class="row col-center-sm">
+                  <button class="col-9 col-md-4 col-lg-4 btn btn-accent my-2 my-md-1 my-lg-1">
+                    <a href="#portfolio">
+                      Check out my latest projects
+                      <i class="bi bi-arrow-bar-down ps-2"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+              <hr>
+              <p>
+                Over the past <span id="experience"></span> years, I've developed my expertise in backend development, API
+                performance optimization,
+                and modernizing legacy systems. My experience spans microservices architecture, C#, .NET Core, and SQL
+                Server,
+                along with frontend development using Angular.
+              </p>
+              <div class="container">
+                <div class="row gap-2 col-center-sm">
+                  <button class="col-7 col-md-3 col-lg-4 btn btn-accent">
+                    <a href="#resume">
+                      Check out my Resume
+                      <i class="bi bi-arrow-bar-down ps-2"></i>
+                    </a>
+                  </button>
+                  <button class="col-7 col-md-3 col-lg-4 btn btn-accent">
+                    <a target="_blank"
+                      href="https://drive.google.com/file/d/107K5Ms25ZbL5VSA4yq_y3IgPn1lzI5k6/view?usp=sharing">
+                      Download my Resume
+                      <i class="bi bi-download ps-2"></i>
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+    
+      </section>
+      <!-- /About Section -->
+    
+      <!-- Skills - Languages Section -->
+      <section id="skills" class="skills section">
+    
+        <!-- Skills  -->
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div><span class="description-title">Languages</span></div>
+        </div>
+        <!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skills-item">
+                <i class="devicon-csharp-plain" style="color: #ffbb2c;"></i>
+                <h3>C#</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-item">
+                <i class="devicon-c-plain-wordmark" style="color: #5578ff;"></i>
+                <h3>C</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skills-item">
+                <i class="devicon-cplusplus-plain" style="color: #e80368;"></i>
+                <h3>C++</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="devicon-azuresqldatabase-plain" style="color: #e361ff;"></i>
+                <h3>SQL</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="skills-item">
+                <i class="devicon-javascript-plain" style="color: #47aeff;"></i>
+                <h3>JavaScript</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="skills-item">
+                <i class="devicon-typescript-plain" style="color: #ffa76e;"></i>
+                <h3>TypeScript</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="skills-item">
+                <i class="devicon-html5-plain" style="color: #11dbcf;"></i>
+                <h3>HTML</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="800">
+              <div class="skills-item">
+                <i class="devicon-css3-plain" style="color: #4233ff;"></i>
+                <h3>CSS</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </div>
+        <!-- End Skills - Languages -->
+    
+      </section>
+      <!-- /Skills - Languages Section -->
+    
+      <!-- Skills - Frameworks Section -->
+      <section id="skills" class="skills section">
+    
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div><span class="description-title">Frameworks & Technologies</span></div>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skills-item">
+                <i class="devicon-dotnetcore-plain" style="color: #b2904f;"></i>
+                <h3>.NET Core</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-item">
+                <i class="devicon-dot-net-plain" style="color: #b20969;"></i>
+                <h3>ASP.NET Core</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skills-item">
+                <i class="custom-icon ci-efcore" style="background-color: #ff5828;"></i>
+                <h3 class="ms-2">EF Core</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-dapper" style="background-color: #29cc61;"></i>
+                <h3 class="ms-2">Dapper</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="skills-item">
+                <i class="devicon-microsoftsqlserver-plain" style="color: #ffbb2c;"></i>
+                <h3>MS SQL</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="skills-item">
+                <i class="devicon-postgresql-plain" style="color: #5578ff;"></i>
+                <h3>PostgreSQL</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="skills-item">
+                <i class="devicon-elasticsearch-plain" style="color: #e80368;"></i>
+                <h3>ElasticSearch</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="800">
+              <div class="skills-item">
+                <i class="custom-icon ci-mediatr" style="background-color: #e361ff;"></i>
+                <h3 class="ms-2">MediatR</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="900">
+              <div class="skills-item">
+                <i class="custom-icon ci-jwt" style="background-color: #47aeff;"></i>
+                <h3 class="ms-2">JWT</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1000">
+              <div class="skills-item">
+                <i class="devicon-rabbitmq-original" style="color: #ffa76e;"></i>
+                <h3>RabbitMQ</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1100">
+              <div class="skills-item">
+                <i class="devicon-angularjs-plain" style="color: #11dbcf;"></i>
+                <h3>Angular</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1100">
+              <div class="skills-item">
+                <i class="devicon-couchbase-plain" style="color: #FF0060;"></i>
+                <h3>Couchbase</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1100">
+              <div class="skills-item">
+                <i class="devicon-redis-plain" style="color: #FFEA20;"></i>
+                <h3>Redis</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </div>
+    
+      </section>
+      <!-- /Skills - Frameworks Section -->
+    
+      <!-- Skills - Tools Section -->
+      <section id="skills" class="skills section">
+    
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div><span class="description-title">Tools</span></div>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skills-item">
+                <i class="devicon-visualstudio-plain" style="color: #059212;"></i>
+                <h3>Visual Studio</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-item">
+                <i class="devicon-vscode-plain" style="color: #F5004F;"></i>
+                <h3>VS Code</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skills-item">
+                <i class="devicon-rider-plain" style="color: #29cc61;"></i>
+                <h3>Jet Brains Rider</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="devicon-postman-plain" style="color: #ff6c44;"></i>
+                <h3>Postman</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="skills-item">
+                <i class="devicon-swagger-plain" style="color: #B6FFFA;"></i>
+                <h3>Swagger</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="skills-item">
+                <i class="devicon-git-plain" style="color: #5578ff;"></i>
+                <h3>Git</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="700">
+              <div class="skills-item">
+                <i class="devicon-github-plain" style="color: #836FFF;"></i>
+                <h3>Github</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="800">
+              <div class="skills-item">
+                <i class="devicon-kibana-plain" style="color: #e361ff;"></i>
+                <h3>Kibana</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="900">
+              <div class="skills-item">
+                <i class="custom-icon ci-teamcity" style="background-color: #98EECC;"></i>
+                <h3 class="ms-2">Teamcity</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1000">
+              <div class="skills-item">
+                <i class="custom-icon ci-octopus" style="background-color: #ffa76e;"></i>
+                <h3 class="ms-2">Octopus</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="1100">
+              <div class="skills-item">
+                <i class="devicon-docker-plain" style="color: #11dbcf;"></i>
+                <h3>Docker</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </div>
+    
+      </section>
+      <!-- /Skills - Tools Section -->
+    
+      <!-- Skills - Cloud Platforms Section -->
+      <section id="skills" class="skills section">
+    
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div><span class="description-title">Cloud Platforms</span></div>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skills-item">
+                <i class="devicon-azure-plain" style="color: #ff6c44;"></i>
+                <h3>Azure</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-item">
+                <i class="devicon-supabase-plain" style="color: #F5004F;"></i>
+                <h3>SupaBase</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skills-item">
+                <i class="devicon-firebase-plain" style="color: #29cc61;"></i>
+                <h3>FireBase</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-render" style="background-color: #059212;"></i>
+                <h3 class="ms-2">Render</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </div>
+    
+      </section>
+      <!-- /Skills - Cloud Platforms Section -->
+    
+      <!-- Skills - Methodologies Section -->
+      <section id="skills" class="skills section">
+    
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Skills</h2>
+          <div><span class="description-title">Methodologies & Practices</span></div>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="skills-item">
+                <i class="custom-icon ci-microservices" style="background-color: #e361ff;"></i>
+                <h3 class="ms-2">Microservices</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="skills-item">
+                <i class="custom-icon ci-microfrontends" style="background-color: #11dbcf;"></i>
+                <h3 class="ms-2">Micro Frontends</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="skills-item">
+                <i class="custom-icon ci-agile" style="background-color: #29cc61;"></i>
+                <h3 class="ms-2">Agile</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-scrum" style="background-color: #ff3f3f;"></i>
+                <h3 class="ms-2">Scrum</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-ddd" style="background-color: #fad9ab;"></i>
+                <h3 class="ms-2">Domain-Driven Design</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-ca" style="background-color: #F26B0F;"></i>
+                <h3 class="ms-2">Clean Architecture</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+            <div class="col-lg-2 col-md-4 col-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="skills-item">
+                <i class="custom-icon ci-cicd" style="background-color: #059212;"></i>
+                <h3 class="ms-2">CI/CD</h3>
+              </div>
+            </div><!-- End Feature Item -->
+    
+          </div>
+    
+        </div>
+    
+      </section>
+      <!-- /Skills - Methodologies Section -->
+    
+      <section id="awards-details" class="awards-details section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Awards</h2>
+          <div><span class="description-title">Check My Awards</span></div>
+        </div><!-- End Section Title -->
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-7">
+              <div class="awards-details-slider swiper init-swiper">
+    
+                <script type="application/json" class="swiper-config">
+                            {
+                              "loop": true,
+                              "speed": 600,
+                              "autoplay": {
+                                "delay": 3000
+                              },
+                              "slidesPerView": "auto",
+                              "pagination": {
+                                "el": ".swiper-pagination",
+                                "type": "bullets",
+                                "clickable": true
+                              }
+                            }
+                          </script>
+    
+                <div class="swiper-wrapper align-items-center">
+    
+                  <div class="swiper-slide">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/kaustab-samanta.appspot.com/o/awards%2FInsta%20Awards.png?alt=media&token=c523eb91-2f29-47f7-b896-21a6c53bb087"
+                      alt="Insta Awards">
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/kaustab-samanta.appspot.com/o/awards%2FRookie%20Rockstar%20XPO%2B%20Oscars_page-0001.jpg?alt=media&token=79f10b75-f7f8-473c-a679-58d0d8550868"
+                      alt="Rookie Rockstar">
+                  </div>
+    
+                  <div class="swiper-slide">
+                    <img
+                      src="https://firebasestorage.googleapis.com/v0/b/kaustab-samanta.appspot.com/o/awards%2FDigital%20Warrior%20Ninja%20Certificate.png?alt=media&token=36c59150-261c-4072-b233-5e0b4143c03f"
+                      alt="Digital Ninja Awards">
+                  </div>
+    
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- /About Section -->
 
-    </section>
-    <!-- /Hero Section -->
+    <!-- Resume Section -->    
+    <div id="resume" class="resume-section wrapper-section">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="text-center">
+            <h1>Resume</h1>
+          </div>
+        </div>
+      </div><!-- End Page Title -->
+    
+      <!-- Resume Section -->
+      <section id="resume-section" class="resume section">
+    
+        <div class="container">
+    
+          <div class="row">
+    
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div>
+                <h3 class="resume-title">
+                  <i class="bi bi-person pe-1"></i>
+                  Summary
+                </h3>
+    
+                <div class="resume-item pb-0">
+                  <h4>Kaustab Samanta</h4>
+                  <p>
+                    <em>
+                      Innovative and results-driven Full-Stack Developer with extensive expertise in .NET Core and Angular.
+                      Skilled in designing and developing scalable, user-focused applications like Shortify.NET, from
+                      initial concept to deployment, while ensuring performance and reliability under tight deadlines.
+                    </em>
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-geo-alt-fill pe-1 accent-icon"></i>
+                      <strong>City:</strong>
+                      <span>Kolkata, India</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-briefcase-fill pe-1 accent-icon"></i>
+                      <strong>Experience:</strong>
+                      <span id="experience"></span> &nbsp;years
+                    </li>
+                    <li>
+                      <i class="bi bi-envelope-at-fill pe-1 accent-icon"></i>
+                      <strong>Email:</strong>
+                      <span>scriptsage001@gmail.com</span>
+                    </li>
+                  </ul>
+                </div><!-- Edn Resume Item -->
+              </div>
+    
+              <div class="pt-2">
+                <h3 class="resume-title">
+                  <i class="bi bi-mortarboard pe-1"></i>
+                  Education
+                </h3>
+    
+                <div class="resume-item">
+                  <h4>Bachelor of Science - BSc</h4>
+                  <h5>2020</h5>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <p><em>University of Calcutta, Kolkata, IN</em></p>
+                    <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#educationCollapse"
+                      aria-expanded="true" aria-controls="educationCollapse"></i>
+                  </div>
+                  <div class="collapse" id="educationCollapse">
+                    Majored in Physics with a strong focus on Computer Science and Mathematics, building analytical
+                    and computational skills applicable to software development.
+                  </div>
+                </div><!-- Edn Resume Item -->
+              </div>
+    
+              <div class="pt-2">
+                <h3 class="resume-title">
+                  <i class="bi bi-award pe-1"></i>
+                  Certifications & Courses
+                </h3>
+    
+                <div data-aos="fade-up" data-aos-delay="100">
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Microsoft Certified: Azure Fundamentals</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse12"
+                        aria-expanded="true" aria-controls="coursesCollapse12"></i>
+                    </div>
+                    <div class="collapse show" id="coursesCollapse12">
+                      <h5>Issued Sep, 2024</h5>
+                      <p><em>Microsoft</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://learn.microsoft.com/en-us/users/kaustabsamanta-7466/credentials/3f73aef0f3d70b08?ref=https%3A%2F%2Fwww.linkedin.com%2F">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Basics of Docker</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse11"
+                        aria-expanded="false" aria-controls="coursesCollapse11"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse11">
+                      <h5>Issued Apr, 2024</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1mp2yLx4uXOLON5FRYtZaTX-QnSFlAYoi/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>AI-first Software Engineering</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse10"
+                        aria-expanded="false" aria-controls="coursesCollapse10"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse10">
+                      <h5>Issued Jan, 2024</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1eLRHzYLS_Nplu62xffI8tfk0iPhV2YjR/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Prompt Engineering</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse09"
+                        aria-expanded="false" aria-controls="coursesCollapse09"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse09">
+                      <h5>Issued Jan, 2024</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1DemWvkYtPbNfqwIV20NhJpDxlj3JjWOh/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Generative AI Landscape</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse08"
+                        aria-expanded="false" aria-controls="coursesCollapse08"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse08">
+                      <h5>Issued Jan, 2024</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1MWi_etDsf0o0cg_HO515SugemfFUAkfW/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Introduction to Elasticsearch</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse07"
+                        aria-expanded="false" aria-controls="coursesCollapse07"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse07">
+                      <h5>Issued Sep, 2023</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/16UPftMuDCXN3NRLse9el92tsM6mhDp_i/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Couchbase Developer</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse06"
+                        aria-expanded="false" aria-controls="coursesCollapse06"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse06">
+                      <h5>Issued Sep, 2023</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1Zn9bb6D7Z7mdkVxBY1ycUU4imo52JvJy/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Micro Frontend Essentials</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse05"
+                        aria-expanded="false" aria-controls="coursesCollapse05"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse05">
+                      <h5>Issued May, 2023</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1C77g1qLF058eq8Gq_EsMQRSGx2TPK9XB/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Infosys Certified C Sharp Programmer</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse04"
+                        aria-expanded="false" aria-controls="coursesCollapse04"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse04">
+                      <h5>Issued Dec, 2022</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1de5CbR6H-3JN12K8rkBzDUJ1f3xjEkWD/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Infosys Certified .NET Microservices Developer</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse03"
+                        aria-expanded="false" aria-controls="coursesCollapse03"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse03">
+                      <h5>Issued Dec, 2022</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/198OjPDTKOn8EU3VWHiJqxVSkua_zBdtX/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Infosys Certified Front End Web Developer</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse02"
+                        aria-expanded="false" aria-controls="coursesCollapse02"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse02">
+                      <h5>Issued Dec, 2022</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1AZmgFDfNZdpl13aMXBzV7J8LbpVi_PgU/view?usp=sharing">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+    
+                  <div class="resume-item">
+                    <div class="d-flex align-items-center justify-content-between">
+                      <h4>Infosys Global Agile Developer</h4>
+                      <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#coursesCollapse01"
+                        aria-expanded="false" aria-controls="coursesCollapse01"></i>
+                    </div>
+                    <div class="collapse" id="coursesCollapse01">
+                      <h5>Issued Nov, 2022</h5>
+                      <p><em>Infosys</em></p>
+                      <button class="btn btn-accent">
+                        <a target="_blank"
+                          href="https://drive.google.com/file/d/1ZJz2C_Ju_K3Pxavfmgs1u-rEKAaiyAc-/view?trk=public_profile_see-credential">
+                          <i class="bi bi-patch-check pe-1"></i>
+                          Verify Credentials
+                        </a>
+                      </button>
+                    </div>
+                  </div><!-- Edn Resume Item -->
+                </div>
+    
+              </div>
+    
+            </div>
+    
+            <div class="col-lg-6 pt-3 pt-md-0 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <h3 class="resume-title">
+                <i class="bi bi-briefcase pe-1"></i>
+                Professional Experience
+              </h3>
+              <div class="resume-item">
+                <h4>Systems Engineer</h4>
+                <h5>Oct 2024 - Present</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Kolkata, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse6"
+                    aria-expanded="true" aria-controls="experienceCollapse6"></i>
+                </div>
+                <ul class="collapse show" id="experienceCollapse6">
+                  <li>
+                    Contributed to feature development and system improvements for the Transportation Management System
+                    (TMS)
+                    for one of the leading intermodal logistics companies in North America, leveraging a microservices
+                    and microfrontend architecture.
+                  </li>
+                  <li>
+                    Contributed to the development of new features that enhanced user experience and operational efficiency.
+                  </li>
+                  <li>
+                    Analyzed and resolved technical debts by thoroughly reviewing the codebase, investigating logs from
+                    Kibana, and aligning with initial feature requirements, then designed and implemented solutions to
+                    improve system stability and functionality.
+                  </li>
+                  <li>
+                    Improved the performance of multiple APIs, optimizing system response times and reducing resource
+                    consumption.
+                  </li>
+                  <li>
+                    Identified, analyzed, and resolved memory leak issues, resulting in more efficient resource management
+                    and improved application performance.
+                  </li>
+                  <li>
+                    Skills: C# · .NET Core · .NET Framework · Microsoft SQL Server · Dapper ORM · Elastic Stack (ELK) ·
+                    RabbitMQ · xUnit
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+              <div class="resume-item">
+                <h4>Senior Systems Associate</h4>
+                <h5>Oct 2023 - Sep 2024</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Kolkata, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse5"
+                    aria-expanded="false" aria-controls="experienceCollapse5"></i>
+                </div>
+                <ul class="collapse" id="experienceCollapse5">
+                  <li>
+                    Contributed to feature development and system improvements for the Transportation Management System
+                    (TMS)
+                    for one of the leading intermodal logistics companies in North America, leveraging a microservices
+                    and microfrontend architecture.
+                  </li>
+                  <li>
+                    Contributed to the development of new features that enhanced user experience and operational efficiency.
+                  </li>
+                  <li>
+                    Analyzed and resolved technical debts by thoroughly reviewing the codebase, investigating logs from
+                    Kibana, and aligning with initial feature requirements, then designed and implemented solutions to
+                    improve system stability and functionality.
+                  </li>
+                  <li>
+                    Improved the performance of multiple APIs, optimizing system response times and reducing resource
+                    consumption.
+                  </li>
+                  <li>
+                    Identified, analyzed, and resolved memory leak issues, resulting in more efficient resource management
+                    and improved application performance.
+                  </li>
+                  <li>
+                    Skills: C# · .NET Core · .NET Framework · Microsoft SQL Server · Dapper ORM · Elastic Stack (ELK) ·
+                    RabbitMQ · xUnit
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+              <div class="resume-item">
+                <h4>Systems Associate</h4>
+                <h5>Jun 2023 - Sep 2023</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Kolkata, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse4"
+                    aria-expanded="false" aria-controls="experienceCollapse4"></i>
+                </div>
+                <ul class="collapse" id="experienceCollapse4">
+                  <li>
+                    Contributed to feature development and system improvements for the Transportation Management System
+                    (TMS)
+                    for one of the leading intermodal logistics companies in North America, leveraging a microservices
+                    and microfrontend architecture.
+                  </li>
+                  <li>
+                    Contributed to the development of a feature that enhanced ETA visibility and improved accuracy for users
+                    monitoring container movements.
+                  </li>
+                  <li>
+                    Implemented a feature that allowed truck drivers to accept or reject job modifications, enhancing driver
+                    autonomy and workflow flexibility.
+                  </li>
+                  <li>
+                    Monitored and analyzed system performance and logs using Kibana to ensure application stability
+                    and quickly resolve issues.
+                  </li>
+                  <li>
+                    Skills: C# · .NET Core · .NET Framework · Microsoft SQL Server · RabbitMQ · Angular · Elastic Stack
+                    (ELK) · Dapper ORM · xUnit
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+              <div class="resume-item">
+                <h4>Systems Associate</h4>
+                <h5>Jan 2023 - May 2023</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Bhubaneswar, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse3"
+                    aria-expanded="false" aria-controls="experienceCollapse3"></i>
+                </div>
+                <ul class="collapse" id="experienceCollapse3">
+                  <li>
+                    Contributed to development of complex features for a Transportation Management System (TMS) for one of
+                    the leading intermodal logistics companies in North America, building on prior work in a microservices
+                    and microfrontend environment.
+                  </li>
+                  <li>
+                    Diagnosed and resolved numerous system bugs, while simultaneously developing new features to
+                    enhance functionality.
+                  </li>
+                  <li>
+                    Developed and maintained unit tests using XUnit, achieving more than 95% test coverage.
+                  </li>
+                  <li>
+                    Actively monitored and supported the CI/CD pipeline using TeamCity and Octopus, ensuring smooth
+                    and reliable deployments.
+                  </li>
+                  <li>
+                    Collaborated with cross-functional teams, including product managers, UI/UX teams, and other
+                    developers, to discuss and refine feature requirements and ensure seamless integration.
+                  </li>
+                  <li>
+                    Skills: C# · .NET Core · .NET Framework · Microsoft SQL Server · Dapper ORM · RabbitMQ · Angular · xUnit
+                    · Elastic Stack (ELK) · TeamCity · Octopus
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+              <div class="resume-item">
+                <h4>Operations Executive</h4>
+                <h5>Jun 2022 - Dec 2022</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Bhubaneswar, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse2"
+                    aria-expanded="false" aria-controls="experienceCollapse2"></i>
+                </div>
+                <ul class="collapse" id="experienceCollapse2">
+                  <li>
+                    Contributed to the modernization of a Transportation Management System (TMS) for one of the
+                    leading intermodal logistics companies in North America, transitioning from a monolithic legacy
+                    application to a microservices and microfrontend architecture.
+                  </li>
+                  <li>
+                    Developed and maintained RESTful APIs using .NET Core as part of the backend team in a
+                    microservices environment.
+                  </li>
+                  <li>
+                    Designed and implemented Stored Procedures for APIs using MSSQL and SSMS,
+                    utilizing Dapper as the ORM for database interactions.
+                  </li>
+                  <li>
+                    Actively monitored and supported the CI/CD pipeline using TeamCity and Octopus, ensuring smooth
+                    and reliable deployments.
+                  </li>
+                  <li>
+                    Collaborated in frontend development using Angular within a microfrontend framework to
+                    enhance the user interface.
+                  </li>
+                  <li>
+                    Added new features and improved system performance to meet evolving client requirements.
+                  </li>
+                  <li>
+                    Skills: C# · .NET Core · .NET Framework · Microsoft SQL Server · Dapper ORM · Angular
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+              <div class="resume-item">
+                <h4>Operations Executive - Apprenticeship</h4>
+                <h5>Mar 2022 - May 2022</h5>
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <p class="m-0"><em>Infosys | Mysore, India</em></p>
+                  <i class="bi bi-chevron-down ps-3" data-bs-toggle="collapse" data-bs-target="#experienceCollapse1"
+                    aria-expanded="false" aria-controls="experienceCollapse1"></i>
+                </div>
+                <ul class="collapse" id="experienceCollapse1">
+                  <li>
+                    Achieved 85% (Grade A) during Infosys FP training.
+                  </li>
+                  <li>
+                    Recognized as a High Performer (HPF) among the top trainees.
+                  </li>
+                  <li>
+                    Trained in Microsoft Technologies including: Basic and Advanced C# |
+                    ASP.NET Core Web API | MSSQL with implementation using SSMS | Entity Framework Core | HTML, and CSS
+                  </li>
+                  <li>
+                    Led a 4-member team in the successful completion of a capstone project, employing Agile
+                    Methodology and utilizing Version Control for efficient project management and collaboration.
+                  </li>
+                  <li>
+                    Skills: C# · ASP.NET Web API · .NET Core · SQL Server Management Studio · Microsoft SQL Server · Entity
+                    Framework (EF) Core · HTML5 · Cascading Style Sheets (CSS)
+                  </li>
+                </ul>
+              </div><!-- Edn Resume Item -->
+    
+            </div>
+    
+          </div>
+    
+        </div>
+    
+      </section><!-- /Resume Section -->
+    </div>    
+    <!-- /Resume Section -->
 
+    <!-- Portfolio Section -->    
+    <div id="portfolio" class="portfolio-section wrapper-section">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="text-center">
+            <h1>Portfolio</h1>
+          </div>
+          <div class="text-center fs-5 pt-2">Here are some of my recent projects that showcase my skills and experience.</div>
+        </div>
+      </div><!-- End Page Title -->
+    
+      <!-- Portfolio Section -->
+      <section id="portfolio-section" class="portfolio section">
+    
+        <div class="container">
+    
+          <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+    
+            <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+              <li data-filter="*" class="filter-active">
+                <i class="bi bi-terminal pe-1"></i>
+                All
+              </li>
+              <li data-filter=".filter-backend">
+                <i class="bi bi-hdd-stack pe-1"></i>
+                Backend
+              </li>
+              <li data-filter=".filter-frontend">
+                <i class="bi bi-code-slash pe-1"></i>
+                Frontend
+              </li>
+            </ul><!-- End Portfolio Filters -->
+    
+            <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/Shortify_NET_logo.png" class="img-fluid" alt="Shortify_NET_logo">
+                  <div class="portfolio-info">
+                    <h4>Shortify.NET</h4>
+                    <p>A powerful .NET 8 URL shortener with JWT auth analytics and caching designed for scalability and
+                      security.</p>
+                    <a href="assets/images/portfolio/Shortify_NET_Details_1.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/shortify.net.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/Shortify_NET_UI.png" class="img-fluid" alt="Shortify_NET_UI">
+                  <div class="portfolio-info">
+                    <h4>Shortify.NET UI</h4>
+                    <p>A powerful URL shortening platform that simplifies sharing links.</p>
+                    <a href="assets/images/portfolio/Shortify_NET_UI_Wide.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/shortify.net.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/SMSBA.png" class="img-fluid" alt="SMSBA">
+                  <div class="portfolio-info">
+                    <h4>Sonali's Makeover Studio & Beauty Academy</h4>
+                    <p>A Portfolio Website for a renowned Makeup Artist.</p>
+                    <a href="assets/images/portfolio/SMSBA_Details_01.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/sonalis-makeover.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-backend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/ShopEase_Logo.png" class="img-fluid" alt="ShopEase_Logo">
+                  <div class="portfolio-info">
+                    <h4>ShopEase PassportService</h4>
+                    <p>The Auth and the User Service of ShopEase, an eCommerce Backend!</p>
+                    <a href="assets/images/portfolio/ShopEase_Logo_Details.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/shopease.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/My_Portfolio.png" class="img-fluid" alt="My_Portfolio">
+                  <div class="portfolio-info">
+                    <h4>My Portfolio</h4>
+                    <p>The Portfolio Website of me.</p>
+                    <a href="assets/images/portfolio/My_Portfolio_Details_01.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-product" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/portfolio-details.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+              <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-frontend">
+                <div class="portfolio-content h-100">
+                  <img src="assets/images/portfolio/My_Portfolio_Old.png" class="img-fluid" alt="My_Portfolio_Old">
+                  <div class="portfolio-info">
+                    <h4>My Portfolio Old</h4>
+                    <p>The old Portfolio Website of me.</p>
+                    <a href="assets/images/portfolio/My_Portfolio_Old_Details_01.png" title="Expanded View"
+                      data-gallery="portfolio-gallery-app" class="glightbox preview-link">
+                      <i class="bi bi-zoom-in"></i>
+                    </a>
+                    <a href="portfolioDetails/portfolio-details-old.html" title="More Details" class="details-link">
+                      <i class="bi bi-link-45deg"></i>
+                    </a>
+                  </div>
+                </div>
+              </div><!-- End Portfolio Item -->
+    
+            </div><!-- End Portfolio Container -->
+    
+          </div>
+    
+        </div>
+    
+      </section><!-- /Portfolio Section -->
+    </div>    
+    <!-- /Portfolio Section -->
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section wrapper-section">
+      <!-- Page Title -->
+      <div class="page-title" data-aos="fade">
+        <div class="heading">
+          <div class="text-center">
+            <h1>Get in Touch</h1>
+          </div>
+          <div class="text-center fs-5 pt-2">Feel free to reach out. I'd love to hear from you!</div>
+        </div>
+      </div><!-- End Page Title -->
+    
+      <!-- Contact Section -->
+      <section id="contact-section" class="contact section">
+    
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+    
+          <div class="row gy-4">
+    
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <i class="icon bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email Me</h3>
+                  <a href="mailto:scriptsage001@gmail.com">scriptsage001@gmail.com</a>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+    
+            <div class="col-md-6">
+              <div class="info-item d-flex align-items-center" data-aos="fade-up" data-aos-delay="500">
+                <i class="icon bi bi-share flex-shrink-0"></i>
+                <div>
+                  <h3>Social Profiles</h3>
+                  <div class="social-links">
+                    <a target="_blank" href="https://github.com/ScriptSage001"><i class="bi bi-github"></i></a>
+                    <a target="_blank" href="https://www.linkedin.com/in/kaustab-samanta-b513511a1/"><i
+                        class="bi bi-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End Info Item -->
+    
+          </div>
+    
+          <form method="post" id="form" class="email-form" data-aos="fade-up" data-aos-delay="600">
+            <div class="row gy-4">
+    
+              <input type="hidden" name="access_key" value="5898526e-f5ad-410b-88d1-7cbf2f43103b">
+              <input type="hidden" name="from_name" value="My Portfolio">
+    
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+              </div>
+    
+              <div class="col-md-6 ">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+              </div>
+    
+              <div class="col-md-12">
+                <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+              </div>
+    
+              <div class="col-md-12">
+                <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+              </div>
+    
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+              <div class="col-md-12 text-center">
+                <div id="message"></div>
+                <div class="loading" id="loading">Loading</div>
+                <div class="error-message" id="error-message"></div>
+                <div class="sent-message" id="sent-message">Your message has been sent. Thank you!</div>
+    
+                <button type="submit">Send Message</button>
+              </div>
+    
+            </div>
+          </form><!-- End Contact Form -->
+        </div>
+      </section><!-- /Contact Section -->
+    </div>
+    <!-- /Contact Section -->
   </main>
 
   <footer id="footer" class="footer dark-background">
@@ -98,7 +1422,14 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div class="scroll-container">
+    <div id="scroll-top-text" class="scroll-top-text">
+      Back to Top
+    </div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+  </div>
 
   <!-- Preloader -->
   <div id="preloader"></div>

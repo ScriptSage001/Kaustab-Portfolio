@@ -456,16 +456,22 @@ h6 {
 /*--------------------------------------------------------------
 # Scroll Top Button
 --------------------------------------------------------------*/
-.scroll-top {
+.scroll-container {
   position: fixed;
+  z-index: 99999;
+  right: 15px;
+  bottom: 15px;  
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.scroll-top {
   visibility: hidden;
   opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
   width: 44px;
   height: 44px;
+  background-color: var(--accent-color);
   border-radius: 50px;
   transition: all 0.4s;
 }
@@ -487,6 +493,26 @@ h6 {
   bottom: 15px;
 }
 
+.scroll-top-text {
+  visibility: hidden;
+  opacity: 0;
+  height: fit-content;
+  color: var(--contrast-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  transition: all 0.4s;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: small;
+  transition: all 0.4s;
+}
+
+.scroll-container .scroll-top:hover ~ .scroll-top-text {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -499,28 +525,51 @@ h6 {
 /*--------------------------------------------------------------
 # Global Page Titles & Breadcrumbs
 --------------------------------------------------------------*/
-.page-title {
+.page-title,
+.details-page-title {
   color: var(--default-color);
   background-color: var(--background-color);
   position: relative;
 }
 
-.page-title .heading {
-  padding: 100px 0 50px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+.page-title .heading,
+.details-page-title .heading {
+  padding: 20px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.page-title .heading h1 {
+.details-page-title .heading {
+  padding: 100px 0 40px 0;
+}
+
+.page-title .heading h1,
+.details-page-title .heading h1 {
   font-size: 38px;
   font-weight: 700;
+  position: relative;
 }
 
-.page-title nav {
+.page-title .heading h1::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  display: inline-block;
+  background: var(--accent-color);
+  margin: -5px auto;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.details-page-title nav {
   background-color: color-mix(in srgb, var(--default-color), transparent 90%);
   padding: 20px 0;
 }
 
-.page-title nav ol {
+.details-page-title nav ol {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -529,11 +578,11 @@ h6 {
   font-weight: 600;
 }
 
-.page-title nav ol li+li {
+.details-page-title nav ol li+li {
   padding-left: 10px;
 }
 
-.page-title nav ol li+li::before {
+.details-page-title nav ol li+li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -542,7 +591,7 @@ h6 {
 
 @media screen and (max-width: 768px) {
   .page-title .heading {
-    padding: 60px 0 30px 0;
+    padding: 30px 0 20px 0;
   }
 }
 
@@ -553,9 +602,13 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 70px 0;
   scroll-margin-top: 100px;
   overflow: clip;
+}
+
+.wrapper-section {
+  padding-top: 60px;
 }
 
 @media (max-width: 1199px) {
@@ -564,6 +617,10 @@ section,
   .section {
     padding: 40px 0;
     scroll-margin-top: 66px;
+  }
+
+  .wrapper-section {
+    padding-top: 0;
   }
 }
 
@@ -721,40 +778,6 @@ section,
 /*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
-.skills .progress {
-  height: 60px;
-  display: block;
-  background: none;
-  border-radius: 0;
-}
-
-.skills .progress .skill {
-  color: var(--heading-color);
-  padding: 0;
-  margin: 0 0 6px 0;
-  text-transform: uppercase;
-  display: block;
-  font-weight: 600;
-  font-family: var(--heading-font);
-}
-
-.skills .progress .skill .val {
-  float: right;
-  font-style: normal;
-}
-
-.skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
-  height: 10px;
-}
-
-.skills .progress-bar {
-  width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: var(--accent-color);
-}
-
 .skills .skills-item {
   background-color: var(--surface-color);
   display: flex;
@@ -1201,14 +1224,12 @@ section,
   font-size: 20px;
   color: var(--contrast-color);
   line-height: 0;
-  padding-left: 10px;
 }
 
 .btn-accent a i {
   font-size: 20px;
   color: var(--contrast-color);
   line-height: 0;
-  padding-left: 10px;
 }
 
 .btn-accent:hover {
@@ -1231,4 +1252,8 @@ section,
 
 .btn-accent-round:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }

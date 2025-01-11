@@ -66,12 +66,18 @@
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
+  let scrollTopText = document.querySelector('.scroll-top-text');
 
   function toggleScrollTop() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      if (!scrollTop.classList.contains('active')) {
+        scrollTopText.style.visibility = 'hidden';
+        scrollTopText.style.opacity = '0';
+      }
     }
   }
+  
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -82,6 +88,17 @@
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
+
+
+  scrollTop.addEventListener('mouseenter', () => {
+    scrollTopText.style.visibility = 'visible';
+    scrollTopText.style.opacity = '1';
+  });
+
+  scrollTop.addEventListener('mouseleave', () => {
+    scrollTopText.style.visibility = 'hidden';
+    scrollTopText.style.opacity = '0';
+  });
 
   /**
    * Animation on scroll function and init
