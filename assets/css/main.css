@@ -52,6 +52,10 @@ body {
   font-family: var(--default-font);
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
