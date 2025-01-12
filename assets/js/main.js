@@ -272,4 +272,11 @@
     });
   }
 
+  document.querySelectorAll('.chevron-btn').forEach(x => {
+    x.addEventListener('click', function() {
+      x.classList.toggle('bi-chevron-up');
+      x.classList.toggle('bi-chevron-down');
+    }, false);
+  });
+
 })();

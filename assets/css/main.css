@@ -936,6 +936,10 @@ section,
     font-size: 14px;
     margin: 0 5px;
   }
+
+  .portfolio .portfolio-content .portfolio-info {
+    opacity: 1 !important;
+  }
 }
 
 .portfolio .portfolio-content {
@@ -1254,6 +1258,7 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.rotate-90 {
-  transform: rotate(90deg);
+.bg-accent {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
 }
