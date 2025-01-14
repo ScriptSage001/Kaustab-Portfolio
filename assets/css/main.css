@@ -22,7 +22,24 @@
   --nav-dropdown-background-color: #1a1a1a;
   --nav-dropdown-color: #fafafa;
   --nav-dropdown-hover-color: #18d26e;
+  --nav-scrolled-background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* [data-theme="light"] {
+  --background-color: #ffffff;
+  --default-color: #333333;
+  --heading-color: #000000;
+  --accent-color: #007b3c;
+  --surface-color: #f5f5f5;
+  --contrast-color: #ffffff;
+  --nav-color: #333333;
+  --nav-hover-color: #005f2e;
+  --nav-mobile-background-color: #f5f5f5;
+  --nav-dropdown-background-color: #f5f5f5;
+  --nav-dropdown-color: #333333;
+  --nav-dropdown-hover-color: #005f2e;
+  --nav-scrolled-background-color: rgba(255, 255, 255, 0.8);
+} */
 
 /* Color Presets */
 .light-background {
@@ -169,10 +186,26 @@ h6 {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
 }
 
+.theme-toggle {
+  /* position: fixed;
+  top: 10px;
+  right: 10px; */
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--default-color);
+  transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--accent-color);
+}
+
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: rgba(0, 0, 0, 0.8);
+  --background-color: var(--nav-scrolled-background-color);
 }
 
 /*--------------------------------------------------------------
@@ -620,7 +653,7 @@ section,
   }
 
   .wrapper-section {
-    padding-top: 0;
+    padding-top: 40px;
   }
 }
 
@@ -1238,6 +1271,7 @@ section,
 
 .btn-accent:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  color: var(--contrast-color);
 }
 
 .btn-accent-round {
@@ -1261,4 +1295,15 @@ section,
 .bg-accent {
   background-color: var(--accent-color);
   color: var(--contrast-color);
+}
+
+#scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: var(--accent-color);
+  z-index: 1000;
+  transition: width 0.2s ease;
 }

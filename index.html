@@ -38,10 +38,12 @@
 
 <body class="index-page">
 
+  <div id="scroll-progress"></div>
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="" class="logo d-flex align-items-center">
         <h1 class="sitename">&lt; /ks &gt;</h1>
       </a>
 
@@ -53,6 +55,11 @@
           <li><a href="#resume">Resume</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
+          <!-- <li>
+            <button id="theme-toggle" class="theme-toggle">
+              <i id="theme-icon" class="bi bi-moon-fill"></i>
+            </button>
+          </li> -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -65,7 +72,7 @@
     <!-- Home Section -->
     <div id="home" class="home-section">
       <!-- Hero Section -->
-      <section id="hero" class="hero section dark-background">
+      <section id="hero" class="hero section background">
       
         <img src="assets/images/hero-bg.jpg" alt="" data-aos="fade-in">
       
@@ -117,12 +124,10 @@
               </p>
               <div class="container">
                 <div class="row col-center-sm">
-                  <button class="col-9 col-md-4 col-lg-4 btn btn-accent my-2 my-md-1 my-lg-1">
-                    <a href="#portfolio">
+                  <a href="#portfolio" class="col-9 col-md-4 col-lg-4 btn btn-accent my-2 my-md-1 my-lg-1">
                       Check out my latest projects
                       <i class="bi bi-arrow-bar-down ps-2"></i>
-                    </a>
-                  </button>
+                  </a>
                 </div>
               </div>
               <hr>
@@ -135,19 +140,15 @@
               </p>
               <div class="container">
                 <div class="row gap-2 col-center-sm">
-                  <button class="col-7 col-md-3 col-lg-4 btn btn-accent">
-                    <a href="#resume">
+                  <a href="#resume" class="col-7 col-md-3 col-lg-4 btn btn-accent">
                       Check out my Resume
                       <i class="bi bi-arrow-bar-down ps-2"></i>
-                    </a>
-                  </button>
-                  <button class="col-7 col-md-3 col-lg-4 btn btn-accent">
-                    <a target="_blank"
-                      href="https://drive.google.com/file/d/107K5Ms25ZbL5VSA4yq_y3IgPn1lzI5k6/view?usp=sharing">
+                  </a>
+                  <a target="_blank"
+                  href="https://drive.google.com/file/d/107K5Ms25ZbL5VSA4yq_y3IgPn1lzI5k6/view?usp=sharing" class="col-7 col-md-3 col-lg-4 btn btn-accent">
                       Download my Resume
                       <i class="bi bi-download ps-2"></i>
-                    </a>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -1570,7 +1571,7 @@
     <!-- /Contact Section -->
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer">
     <div class="container">
       <h3 class="sitename">&lt; /ks &gt;</h3>
       <p>Translating Dreams into Digital Realities: Where Code Meets Design.</p>
