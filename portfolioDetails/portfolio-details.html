@@ -9,10 +9,10 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon_package/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicon_package/apple-touch-icon.webp">
   <link rel="icon" type="image/x-icon" href="../assets/images/favicon_package/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_package/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon_package/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon_package/favicon-32x32.webp">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon_package/favicon-16x16.webp">
   <link rel="manifest" href="../assets/images/favicon_package/site.webmanifest">
   <link rel="mask-icon" href="../assets/images/favicon_package/safari-pinned-tab.svg" color="#5bbad5">
 
@@ -44,10 +44,11 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../resume.html">Resume</a></li>
-          <li><a href="../portfolio.html" class="active">Portfolio</a></li>
-          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html#about">About</a></li>
+          <li><a href="../index.html#skills">Skills</a></li>
+          <li><a href="../index.html#resume">Resume</a></li>
+          <li><a href="../index.html#portfolio" class="active">Portfolio</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -58,7 +59,7 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title" data-aos="fade">
+    <div class="details-page-title" data-aos="fade">
       <div class="heading">
         <div class="text-center">
             <h1>My Portfolio</h1>
@@ -68,7 +69,7 @@
         <div class="container">
           <ol>
             <li><a href="../index.html">Home</a></li>
-            <li><a href="../portfolio.html">Portfolio</a></li>
+            <li><a href="../index.html#portfolio">Portfolio</a></li>
             <li class="current">My Portfolio</li>
           </ol>
         </div>
@@ -104,19 +105,19 @@
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="../assets/images/portfolio/My_Portfolio_Details_01.png" alt="MP_01">
+                  <img src="../assets/images/portfolio/My_Portfolio_Details_01.webp" alt="MP_01">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../assets/images/portfolio/My_Portfolio_Details_02.png" alt="MP_02">
+                  <img src="../assets/images/portfolio/My_Portfolio_Details_02.webp" alt="MP_02">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../assets/images/portfolio/My_Portfolio_Details_03.png" alt="MP_03">
+                  <img src="../assets/images/portfolio/My_Portfolio_Details_03.webp" alt="MP_03">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="../assets/images/portfolio/My_Portfolio_Details_04.png" alt="MP_04">
+                  <img src="../assets/images/portfolio/My_Portfolio_Details_04.webp" alt="MP_04">
                 </div>
 
               </div>
@@ -190,7 +191,14 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div class="scroll-container">
+    <div id="scroll-top-text" class="scroll-top-text">
+      Back to Top
+    </div>
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i>
+    </a>
+  </div>
 
   <!-- Preloader -->
   <div id="preloader"></div>

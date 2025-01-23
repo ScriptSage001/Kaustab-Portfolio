@@ -1,6 +1,32 @@
 (function() {
   "use strict";
 
+  // /**
+  //  * Toggle Theme
+  //  */
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const themeToggleButton = document.getElementById("theme-toggle");
+  //   const themeIcon = document.getElementById("theme-icon");
+  //   const currentTheme = localStorage.getItem("theme");
+  
+  //   if (currentTheme) {
+  //     document.documentElement.setAttribute("data-theme", currentTheme);
+  //     themeIcon.className = currentTheme === "light" ? "bi bi-sun-fill" : "bi bi-moon-fill";
+  //   }
+  
+  //   themeToggleButton.addEventListener("click", () => {
+  //     const isLightMode = document.documentElement.getAttribute("data-theme") === "light";
+  //     const newTheme = isLightMode ? "dark" : "light";
+  
+  //     // Set the new theme
+  //     document.documentElement.setAttribute("data-theme", newTheme);
+  //     localStorage.setItem("theme", newTheme);
+  
+  //     // Update the icon
+  //     themeIcon.className = newTheme === "light" ? "bi bi-sun-fill" : "bi bi-moon-fill";
+  //   });
+  // });
+
   /**
    * Apply .scrolled class to the body as the page is scrolled down
    */
@@ -66,12 +92,18 @@
    * Scroll top button
    */
   let scrollTop = document.querySelector('.scroll-top');
+  let scrollTopText = document.querySelector('.scroll-top-text');
 
   function toggleScrollTop() {
     if (scrollTop) {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      if (!scrollTop.classList.contains('active')) {
+        scrollTopText.style.visibility = 'hidden';
+        scrollTopText.style.opacity = '0';
+      }
     }
   }
+  
   scrollTop.addEventListener('click', (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -82,6 +114,30 @@
 
   window.addEventListener('load', toggleScrollTop);
   document.addEventListener('scroll', toggleScrollTop);
+
+
+  scrollTop.addEventListener('mouseenter', () => {
+    scrollTopText.style.visibility = 'visible';
+    scrollTopText.style.opacity = '1';
+  });
+
+  scrollTop.addEventListener('mouseleave', () => {
+    scrollTopText.style.visibility = 'hidden';
+    scrollTopText.style.opacity = '0';
+  });
+
+  /**
+   * Scroll Progress Bar
+   */
+
+  window.addEventListener("scroll", () => {
+    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercentage = (scrollTop / scrollHeight) * 100;
+  
+    const progressBar = document.getElementById("scroll-progress");
+    progressBar.style.width = `${scrollPercentage}%`;
+  }); 
 
   /**
    * Animation on scroll function and init
@@ -254,5 +310,12 @@
         });
     });
   }
+
+  document.querySelectorAll('.chevron-btn').forEach(x => {
+    x.addEventListener('click', function() {
+      x.classList.toggle('bi-chevron-up');
+      x.classList.toggle('bi-chevron-down');
+    }, false);
+  });
 
 })();
