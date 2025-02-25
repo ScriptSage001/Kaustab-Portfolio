@@ -1307,3 +1307,31 @@ section,
   z-index: 1000;
   transition: width 0.2s ease;
 }
+
+.rotate-0 {
+  animation: rotate-180-0 0.2s linear;
+  transform: rotate(0deg);
+}
+
+.rotate-180 {
+  animation: rotate-0-180 0.2s linear;
+  transform: rotate(180deg);
+}
+
+@keyframes rotate-0-180 {
+  0%{
+     transform: rotate(0deg);
+    }
+ 100%{
+     transform: rotate(180deg);
+    }
+ }
+
+ @keyframes rotate-180-0 {
+  0%{
+     transform: rotate(180deg);
+    }
+ 100%{
+     transform: rotate(0deg);
+    }
+ }
